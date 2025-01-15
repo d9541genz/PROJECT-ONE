@@ -136,6 +136,15 @@
     transform: rotate(270deg); 
 }
 
+@media (max-width: 991px) {
+    .dropdown-menu .dropdown-toggle::after {
+        content: '';
+        font-family: 'FontAwesome';
+        margin-left: 5px; 
+        transform: rotate(0deg); 
+    }
+}
+
 
 .sale{
     margin: 10px
