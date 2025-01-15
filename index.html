@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bán xe đạp</title>
+        <link rel="icon" href="img/logo.png">
+        <!-- Bootstrap CSS from CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- Bootstrap JS from CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./js/webchat.js"></script>
+    </head>
+<body>
+    <div class="header py-3">    
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Logo căn giữa -->
+                <div class="col-auto d-flex accordion">
+                    <img src="./img/logo.png" alt="Logo" class="logo">
+                </div>                
+                <!-- Tiêu đề ở giữa -->
+                <div class="col text-center">
+                    <h1 class="additional-title">CỬA BÁN LẺ XE ĐẠP & PHỤC TÙNG </h1>
+                    <h4 class="subtitle">ĐẠT TIÊU CHUẨN KIỂM ĐỊNH CHẤT LƯỢNG UCI</h4>   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-css">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">PROJECT ONE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <!-- THƯƠNG HIỆU -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="thuong-hieu-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">THƯƠNG HIỆU</a>
+                            <ul class="dropdown-menu" aria-labelledby="thuong-hieu-dropdown">
+                                <!-- TOP BRANDS -->
+                                <li class="dropdown">
+                                    <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">TOP BRANDS</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="./page/TREX.html">TREX</a></li>
+                                        <li><a class="dropdown-item" href="./page/GIANT.html">GIANT</a></li>
+                                        <li><a class="dropdown-item" href="./page/S-Word.html">S-Word</a></li>
+                                    </ul>
+                                </li>
+                                <!-- NEW BRANDS -->
+                                <li class="dropdown">
+                                    <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">NEW BRANDS</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="./page/TWITTE.html">TWITTE</a></li>
+                                        <li><a class="dropdown-item" href="./page/JAVA.html">JAVA</a></li>
+                                        <li><a class="dropdown-item" href="./page/SAVA.html">SAVA</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- XE ĐẠP -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="xe-dap-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">XE ĐẠP</a>
+                            <ul class="dropdown-menu" aria-labelledby="xe-dap-dropdown">
+                                <li><a class="dropdown-item" href="#">Xe đạp đua đường trường</a></li>
+                                <li><a class="dropdown-item" href="#">Xe đạp tính giờ</a></li>
+                                <li><a class="dropdown-item" href="#">Xe đạp địa hình</a></li>
+                                <li><a class="dropdown-item" href="#">Xe đạp tp</a></li>
+                            </ul>
+                        </li>
+                        <!-- PHỤ TÙNG -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="phu-tung-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">PHỤ TÙNG</a>
+                            <ul class="dropdown-menu" aria-labelledby="phu-tung-dropdown">
+                                <li><a class="dropdown-item" href="#">Bộ chuyển động</a></li>
+                                <li><a class="dropdown-item" href="#">Xích</a></li>
+                                <li><a class="dropdown-item" href="#">Líp</a></li>
+                                <li><a class="dropdown-item" href="#">Tay bấm</a></li>
+                                <li><a class="dropdown-item" href="#">Bánh-Ruột</a></li>
+                                <li><a class="dropdown-item" href="#">V.v</a></li>
+                            </ul>
+                        </li>
+                        <!-- PHỤ KIỆN -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="phu-kien-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">PHỤ KIỆN</a>
+                            <ul class="dropdown-menu" aria-labelledby="phu-kien-dropdown">
+                                <li><a class="dropdown-item" href="#">Mũ bảo hiểm</a></li>
+                                <li><a class="dropdown-item" href="#">Đèn xe</a></li>
+                                <li><a class="dropdown-item" href="#">Vá xe</a></li>
+                                <li><a class="dropdown-item" href="#">Khóa</a></li>
+                            </ul>
+                        </li>
+                        <!-- TRANG PHỤC -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="trang-phuc-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">TRANG PHỤC</a>
+                            <ul class="dropdown-menu" aria-labelledby="trang-phuc-dropdown">
+                                <li><a class="dropdown-item" href="#">Bộ chuyển động</a></li>
+                                <li><a class="dropdown-item" href="#">Xích</a></li>
+                                <li><a class="dropdown-item" href="#">Líp</a></li>
+                                <li><a class="dropdown-item" href="#">Tay bấm</a></li>
+                                <li><a class="dropdown-item" href="#">Bánh-Ruột</a></li>
+                                <li><a class="dropdown-item" href="#">V.v</a></li>
+                            </ul>
+                        </li>
+                        <!-- DINH DƯỠNG -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dinh-duong-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">DINH DƯỠNG</a>
+                            <ul class="dropdown-menu" aria-labelledby="dinh-duong-dropdown">
+                                <li><a class="dropdown-item" href="#">Bộ chuyển động</a></li>
+                                <li><a class="dropdown-item" href="#">Xích</a></li>
+                                <li><a class="dropdown-item" href="#">Líp</a></li>
+                                <li><a class="dropdown-item" href="#">Tay bấm</a></li>
+                                <li><a class="dropdown-item" href="#">Bánh-Ruột</a></li>
+                                <li><a class="dropdown-item" href="#">V.v</a></li>
+                            </ul>
+                        </li>
+                        <!-- Giỏ hàng -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="./cart/Cart.html">🛒Giỏ hàng</a>
+                        </li>
+                        <!-- Tìm kiếm -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="./page/SEARCH.html">🔍Tìm kiếm</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/hero_slide_1.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/hero_slide_4.webp" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="sale">
+        <div class="NDsale-1">
+            Chương trình khuyến mãi
+        </div>
+
+        <div id="promoCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="promo-item text-center p-4">
+                                <h3 class="promo-title">Giảm giá 20% xe đạp</h3>
+                                <p class="promo-text">Áp dụng đến hết 31/12/2024</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="promo-item text-center p-4">
+                                <h3 class="promo-title">Mua phụ kiện tặng lắp đặt</h3>
+                                <p class="promo-text">Chỉ tháng này!</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="promo-item text-center p-4">
+                                <h3 class="promo-title">Mua 1 tặng 1 phụ kiện</h3>
+                                <p class="promo-text">Dành cho thành viên</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="promo-item text-center p-4">
+                                <h3 class="promo-title">Giảm 30% xe điện</h3>
+                                <p class="promo-text">Áp dụng 1 tuần!</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="promo-item text-center p-4">
+                                <h3 class="promo-title">Tặng áo xe đạp</h3>
+                                <p class="promo-text">Cho đơn hàng trên 2 triệu</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="promo-item text-center p-4">
+                                <h3 class="promo-title">Giảm giá 10%</h3>
+                                <p class="promo-text">Khi thanh toán online</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="NDsanpham-1">SẢN PHẨM NỔI BẬT</div>
+    
+        <a href="./sanpham/sanpham.html" class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-12 product-item">
+            <img src="./img/sp1.webp" alt="Trek Madone SL 6 AXS Gen 8">
+            <h3>TREK</h3>
+            <p>Xe Đạp Đua</p>
+            <p>Madone SL 6 AXS Gen 8</p>
+            <p class="product-price">150,000,000đ</p>
+            <div class="product-hover-description">
+                <p><strong>Hãng:</strong> TREK</p>
+                <p><strong>Dòng xe:</strong> Xe Đạp Đua</p>
+                <p><strong>Tên xe:</strong> Madone SL 6 AXS Gen 8</p>
+                <p class="click-to-view">Nhấp vào để xem chi tiết</p>
+            </div>
+        </a>
+
+        <a href="./sanpham/sanpham.html" class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-12 product-item">
+            <img src="./img/sp1.webp" alt="Trek Madone SL 6 AXS Gen 8">
+            <h3>TREK</h3>
+            <p>Xe Đạp Đua</p>
+            <p>Madone SL 6 AXS Gen 8</p>
+            <p class="product-price">150,000,000đ</p>
+            <div class="product-hover-description">
+                <p><strong>Hãng:</strong> TREK</p>
+                <p><strong>Dòng xe:</strong> Xe Đạp Đua</p>
+                <p><strong>Tên xe:</strong> Madone SL 6 AXS Gen 8</p>
+                <p class="click-to-view">Nhấp vào để xem chi tiết</p>
+            </div>
+        </a>
+        <a href="./sanpham/sanpham.html" class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-12 product-item">
+            <img src="./img/sp1.webp" alt="Trek Madone SL 6 AXS Gen 8">
+            <h3>TREK</h3>
+            <p>Xe Đạp Đua</p>
+            <p>Madone SL 6 AXS Gen 8</p>
+            <p class="product-price">150,000,000đ</p>
+            <div class="product-hover-description">
+                <p><strong>Hãng:</strong> TREK</p>
+                <p><strong>Dòng xe:</strong> Xe Đạp Đua</p>
+                <p><strong>Tên xe:</strong> Madone SL 6 AXS Gen 8</p>
+                <p class="click-to-view">Nhấp vào để xem chi tiết</p>
+            </div>
+        </a>
+        <a href="./sanpham/sanpham.html" class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-12 product-item">
+            <img src="./img/sp1.webp" alt="Trek Madone SL 6 AXS Gen 8">
+            <h3>TREK</h3>
+            <p>Xe Đạp Đua</p>
+            <p>Madone SL 6 AXS Gen 8</p>
+            <p class="product-price">150,000,000đ</p>
+            <div class="product-hover-description">
+                <p><strong>Hãng:</strong> TREK</p>
+                <p><strong>Dòng xe:</strong> Xe Đạp Đua</p>
+                <p><strong>Tên xe:</strong> Madone SL 6 AXS Gen 8</p>
+                <p class="click-to-view">Nhấp vào để xem chi tiết</p>
+            </div>
+        </a>
+        <a href="./sanpham/sanpham.html" class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-12 product-item">
+            <img src="./img/sp1.webp" alt="Trek Madone SL 6 AXS Gen 8">
+            <h3>TREK</h3>
+            <p>Xe Đạp Đua</p>
+            <p>Madone SL 6 AXS Gen 8</p>
+            <p class="product-price">150,000,000đ</p>
+            <div class="product-hover-description">
+                <p><strong>Hãng:</strong> TREK</p>
+                <p><strong>Dòng xe:</strong> Xe Đạp Đua</p>
+                <p><strong>Tên xe:</strong> Madone SL 6 AXS Gen 8</p>
+                <p class="click-to-view">Nhấp vào để xem chi tiết</p>
+            </div>
+        </a>
+        <a href="./sanpham/sanpham.html" class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-12 product-item">
+            <img src="./img/sp1.webp" alt="Trek Madone SL 6 AXS Gen 8">
+            <h3>TREK</h3>
+            <p>Xe Đạp Đua</p>
+            <p>Madone SL 6 AXS Gen 8</p>
+            <p class="product-price">150,000,000đ</p>
+            <div class="product-hover-description">
+                <p><strong>Hãng:</strong> TREK</p>
+                <p><strong>Dòng xe:</strong> Xe Đạp Đua</p>
+                <p><strong>Tên xe:</strong> Madone SL 6 AXS Gen 8</p>
+                <p class="click-to-view">Nhấp vào để xem chi tiết</p>
+            </div>
+        </a>
+    </div>
+    
+    
+    
+
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <h5>Về Chúng Tôi</h5>
+                    <p>Chúng tôi cung cấp các loại xe đạp, phụ tùng, phụ kiện chất lượng cao từ các thương hiệu nổi tiếng.</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>Liên Kết Nhanh</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Trang Chủ</a></li>
+                        <li><a href="#" class="text-white">Sản Phẩm</a></li>
+                        <li><a href="#" class="text-white">Khuyến Mãi</a></li>
+                        <li><a href="#" class="text-white">Liên Hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>Liên Hệ</h5>
+                    <p>Địa chỉ: Số 123, Đường , Thành phố </p>
+                    <p>Điện thoại: 0123 456 789</p>
+                    <p>Email: contact@xedap.com</p>
+                    <p><a href="https://maps.app.goo.gl/syWekPBwmC71MtvC7" class="text-white" target="_blank">Xem trên bản đồ</a></p>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>Mạng Xã Hội</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Facebook</a></li>
+                        <li><a href="#" class="text-white">Instagram</a></li>
+                        <li><a href="#" class="text-white">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; TRẦN NGUYỄN NHƯ THÁI</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="chat-widget" class="chat-widget">
+        <button id="chat-button" class="chat-button">
+            <span>💬</span>
+        </button>
+        <div id="chat-box" class="chat-box">
+            <div class="chat-header">
+                <span>Chat with Us</span>
+                <button id="close-chat" class="close-chat">❌</button>
+            </div>
+            <div class="chat-content">
+                <div class="message bot-message">
+                    <p>Chào bạn! Mình có thể giúp gì cho bạn?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Nhập câu hỏi..." />
+                <button id="send-message" class="send-message">Gửi</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

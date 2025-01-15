@@ -1,0 +1,738 @@
+.header {
+    background-color: #292b3a; 
+    color: white;
+    text-align: center;
+}
+
+.logo {
+    height: 12.5rem; /* 200px */
+    width: 12.5rem; /* 200px */
+    object-fit: contain;
+}
+
+.nav-css {
+    background-color: #292b3a;
+}
+
+.dropdown {
+    position: relative; 
+}
+
+.dropdown-menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-0.3125rem); /* -5px */
+    background-color: #292b3a;
+    border: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1050; 
+    position: absolute; 
+    top: 100%;
+    left: 0; 
+    width: auto; 
+}
+
+.nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu .dropdown-menu {
+    left: 100%; 
+    margin-left: -0.1875rem; /* -3px */ 
+    top: 0; 
+    background-color: #292b3a;
+    transform: translateX(-0.3125rem); /* -5px */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1100; 
+}
+
+.dropdown-menu .dropdown-item:hover + .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 0.4375rem 0.9375rem; /* 7px 15px */
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu {
+    margin-top: 0;
+    margin-left: 0; 
+}
+
+.nav-item {
+    position: relative;
+}
+
+.dropdown-menu {
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.dropdown-menu .dropdown-menu {
+    transition: opacity 0.5s ease, visibility 0.5s ease, transform 0.3s ease;
+}
+
+.nav-item .nav-link {
+    padding-left: 0.9375rem; /* 15px */
+    padding-right: 0.9375rem; /* 15px */
+}
+
+.nav-link, .dropdown-item {
+    color: #fff; 
+}
+
+.nav-link:hover, .dropdown-item:hover {
+    color: #fff; 
+    background-color: #495057; 
+}
+
+.dropdown-menu {
+    background-color: #292b3a;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #fff;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: #fff; 
+    background-color: #495057; 
+}
+
+.nav-link {
+    background-color: #292b3a;
+    color: #f8f9fa;
+    border-radius: 0.3125rem; /* 5px */
+    padding: 1rem 1.2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #495057; 
+    color: #ffffff;
+}
+
+.dropdown-menu .dropdown-toggle::after {
+    content: '';
+    font-family: 'FontAwesome';
+    margin-left: 5px; 
+    transform: rotate(270deg); 
+}
+
+.sale {
+    margin: 0.625rem; /* 10px */
+}
+
+.NDsale-1 {
+    text-align: center;
+    font-size: 1.75rem; /* 28px */
+    font-family: 'Roboto', sans-serif;
+    padding: 0.625rem; /* 10px */
+}
+
+.carousel-inner .col-3 {
+    padding: 0 0.3125rem; /* 5px */
+    margin: 0 0.625rem; /* 10px */
+}
+
+.carousel-inner .row {
+    margin-left: -0.3125rem; /* -5px */
+    margin-right: -0.3125rem; /* -5px */
+}
+
+.promo-item {
+    background-color: #f8f9fa;
+    border: 0.0625rem solid #ddd; /* 1px */
+    border-radius: 0.625rem; /* 10px */
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1); /* 4px 6px */
+    padding: 1.25rem; /* 20px */
+    height: 100%;
+}
+
+.promo-title {
+    font-size: 1.125rem; /* 18px */
+    font-weight: bold;
+}
+
+.promo-text {
+    font-size: 0.875rem; /* 14px */
+    color: #6c757d;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel {
+    margin: auto;
+}
+
+.container.product-list {
+    padding: 1.25rem 0; /* 20px */
+}
+
+.row{
+    margin: 1.25rem; /* 20px */
+}
+
+.row a {
+    text-decoration: none;
+}
+
+.row a:hover {
+    text-decoration: none;
+}
+
+.product-item {
+    padding: 0.3125rem; /* 5px */
+    box-sizing: border-box; 
+    text-align: center;
+    background-color: #fff;
+    border: 0.0625rem solid #ddd; /* 1px */
+    border-radius: 0.625rem; /* 10px */
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1); /* 4px 6px */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-0.3125rem); /* -5px */
+    box-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.2); /* 8px 12px */
+}
+
+.product-item img {
+    width: 100%;
+    max-width: 15.625rem; /* 250px */
+    height: auto;
+    margin-bottom: 0.625rem; /* 10px */
+    border-radius: 0.3125rem; /* 5px */
+    object-fit: contain;
+}
+
+.product-item h3 {
+    font-size: 1rem; 
+    font-weight: bold;
+    color: #333;
+}
+
+.product-item p {
+    margin: 0.3125em 0; /* 5px */
+    font-size: 0.875em; /* 14px */
+    color: #555;
+}
+
+.product-item .product-price {
+    font-size: 1.125rem; 
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding-top: 1.25rem; /* 20px */
+}
+
+.footer h5 {
+    font-weight: bold;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Style for the chat widget */
+.chat-widget {
+    position: fixed;
+    bottom: 1.25rem; /* 20px */
+    right: 1.25rem; /* 20px */
+    z-index: 9999;
+}
+
+.chat-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.9375rem; /* 15px */
+    border-radius: 50%;
+    font-size: 1.5rem; /* 24px */
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.2); /* 4px 6px */
+    transition: all 0.3s ease;
+}
+
+.chat-button:hover {
+    background-color: #0056b3;
+}
+
+.chat-box {
+    display: none;
+    position: absolute;
+    bottom: 4.375rem; /* 70px */
+    right: 0;
+    width: 18.75rem; /* 300px */
+    background-color: #fff;
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.2); /* 4px 6px */
+    border-radius: 0.625rem; /* 10px */
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.chat-header {
+    background-color: #007bff;
+    color: white;
+    padding: 0.625rem; /* 10px */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-content {
+    padding: 0.625rem; /* 10px */
+    max-height: 12.5rem; /* 200px */
+    overflow-y: auto;
+    font-size: 0.875rem; /* 14px */
+}
+
+.message {
+    margin: 0.3125rem 0; /* 5px */
+    padding: 0.5rem; /* 8px */
+    border-radius: 0.3125rem; /* 5px */
+}
+
+.bot-message {
+    background-color: #f1f1f1;
+    text-align: left;
+}
+
+.user-message {
+    background-color: #007bff;
+    color: white;
+    text-align: right;
+}
+
+.chat-input {
+    padding: 0.625rem; /* 10px */
+    display: flex;
+    border-top: 0.0625rem solid #ddd; /* 1px */
+    background-color: #f9f9f9;
+}
+
+.chat-input input {
+    width: 100%;
+    padding: 0.5rem; /* 8px */
+    border: 0.0625rem solid #ddd; /* 1px */
+    border-radius: 0.3125rem; /* 5px */
+}
+
+.send-message {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem; /* 8px */
+    border: none;
+    border-radius: 0.3125rem; /* 5px */
+    cursor: pointer;
+    margin-left: 0.625rem; /* 10px */
+}
+
+.send-message:hover {
+    background-color: #0056b3;
+}
+
+.close-chat {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.125rem; /* 18px */
+    cursor: pointer;
+}
+
+.product-container {
+    width: 100%;
+    max-width: 1200px; /* Giới hạn chiều rộng tối đa của container */
+    margin: 0 auto; 
+}
+
+.product-page {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    width: 100%; /* Đảm bảo chiều rộng là 100% của container */
+    max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+    margin: 20PX auto; 
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.product-image img {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-details h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+.product-details h2 {
+    font-size: 28px;
+    color: #d32f2f;
+    margin: 0;
+}
+
+.product-sku {
+    font-size: 14px;
+    color: #666;
+}
+
+.product-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Size Selector */
+.size-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.size-selector select {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.size-chart-btn {
+    background-color: #d32f2f;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.size-chart-btn:hover {
+    background-color: #a82323;
+}
+
+@media (max-width: 767px) {
+
+    .product-page {
+        flex-direction: column;
+    }
+
+    .product-image {
+        order: -1; 
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+
+    .product-details {
+        order: 1; 
+        width: 100%; 
+    }
+
+    .product-image img {
+        width: 100%; 
+        height: auto;
+    }
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-selector input {
+    width: 50px;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.action-buttons button {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart {
+    background-color: #333;
+    color: #fff;
+}
+
+.add-to-cart:hover {
+    background-color: #555;
+}
+
+.installment {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.installment:hover {
+    background-color: #0056b3;
+}
+
+.buy-now {
+    background-color: #d32f2f;
+    color: #fff;
+}
+
+.buy-now:hover {
+    background-color: #a82323;
+}
+
+/* Additional Info */
+.additional-info {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.additional-info span {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.discount-info span {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.discount-info a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.product-tabs {
+    margin-top: 20px;
+}
+
+.tab-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    border-bottom: 2px solid #ccc;
+}
+
+.tab-menu li {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.tab-menu li.active {
+    background-color: #292b3a;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid #292b3a;
+    border-bottom: none;
+}
+
+.tab-menu li:hover {
+    background-color: #495057;
+    color: #fff;
+}
+
+.tab-content {
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 20px;
+    border: none;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #333;
+}
+
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding-top: 1.25rem; 
+}
+
+.footer h5 {
+    font-weight: bold;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.chat-widget {
+    position: fixed;
+    bottom: 1.25rem; /* 20px */
+    right: 1.25rem; /* 20px */
+    z-index: 9999;
+}
+
+.chat-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.9375rem; /* 15px */
+    border-radius: 50%;
+    font-size: 1.5rem; /* 24px */
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.2); /* 4px 6px */
+    transition: all 0.3s ease;
+}
+
+.chat-button:hover {
+    background-color: #0056b3;
+}
+
+.chat-box {
+    display: none;
+    position: absolute;
+    bottom: 4.375rem; /* 70px */
+    right: 0;
+    width: 18.75rem; /* 300px */
+    background-color: #fff;
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.2); /* 4px 6px */
+    border-radius: 0.625rem; /* 10px */
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.chat-header {
+    background-color: #007bff;
+    color: white;
+    padding: 0.625rem; /* 10px */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-content {
+    padding: 0.625rem; /* 10px */
+    max-height: 12.5rem; /* 200px */
+    overflow-y: auto;
+    font-size: 0.875rem; /* 14px */
+}
+
+.message {
+    margin: 0.3125rem 0; /* 5px */
+    padding: 0.5rem; /* 8px */
+    border-radius: 0.3125rem; /* 5px */
+}
+
+.bot-message {
+    background-color: #f1f1f1;
+    text-align: left;
+}
+
+.user-message {
+    background-color: #007bff;
+    color: white;
+    text-align: right;
+}
+
+.chat-input {
+    padding: 0.625rem; /* 10px */
+    display: flex;
+    border-top: 0.0625rem solid #ddd; /* 1px */
+    background-color: #f9f9f9;
+}
+
+.chat-input input {
+    width: 100%;
+    padding: 0.5rem; /* 8px */
+    border: 0.0625rem solid #ddd; /* 1px */
+    border-radius: 0.3125rem; /* 5px */
+}
+
+.send-message {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem; /* 8px */
+    border: none;
+    border-radius: 0.3125rem; /* 5px */
+    cursor: pointer;
+    margin-left: 0.625rem; /* 10px */
+}
+
+.send-message:hover {
+    background-color: #0056b3;
+}
+
+.close-chat {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.125rem; /* 18px */
+    cursor: pointer;
+}
