@@ -81,10 +81,6 @@
     position: relative;
 }
 
-.dropdown-menu {
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-
 .dropdown-menu .dropdown-menu {
     transition: opacity 0.5s ease, visibility 0.5s ease, transform 0.3s ease;
 }
@@ -105,10 +101,6 @@
 
 .dropdown-menu {
     background-color: #292b3a;
-}
-
-.dropdown-menu .dropdown-item {
-    color: #fff;
 }
 
 .dropdown-menu .dropdown-item:hover {
@@ -143,6 +135,44 @@
         margin-left: 5px; 
         transform: rotate(0deg); 
     }
+}
+
+@keyframes dropdownFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes dropdownSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    animation: dropdownFadeIn 0.3s ease-in-out;
+}
+
+.dropdown-menu .dropdown-item:hover + .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    animation: dropdownSlideIn 0.3s ease-in-out;
 }
 
 .sale {
